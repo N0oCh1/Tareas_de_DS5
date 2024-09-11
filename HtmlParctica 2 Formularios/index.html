@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi informacion</title>
+</head>
+<body style="background-color: rgb(1, 1, 58); padding: 12px 36px 12px 36px; color: white; font-size: medium; display: flex; flex-direction: column;">
+<!-- encabezado  -->
+    <header style="display: flex; width: 100%; flex-direction: row; gap: 20px">
+        <h2>Ruben Feng</h2>
+        <h2>Ramses Szobotka</h2>
+    </header>
+
+    <main style="padding: 0px 200px 0px 200px">
+        <h1>Formulario</h1>
+        <!-- Formulario -->
+        <section>
+            <form>
+                <fieldset style="display: flex; flex-direction: column; gap: 8px;">
+                    <legend>
+                        Datos Personales 
+                    </legend>
+                    <!-- nombre -->
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" id="Nombre" name="Nombre" placeholder="Nombre....."> 
+                    <!-- Apellido -->
+                    <label for="Apellido"> Apellido</label>
+                    <input type="text" id="Apellido" name="Apellido" placeholder="Apellido......"/>
+                    
+                    <!-- Cedula -->
+                    <label for="Nombre">Cedula</label>
+                    <input type="number" id="Cedula" name="Cedula" placeholder="Cedula......"/>
+                    
+                    <!-- Fecha de nacimieto -->
+                    <label for="fechaNacimiento" >Fecha de nacimiento</label>
+                    <input type="date" min = "1950-1-1" max = "2100-1-1" id="fechaNacimiento" name="fechaNacimiento" />
+                    
+                    <!-- Lugar de nacimeito -->
+                     
+                    <label for="Nacimiento" id="Nacimiento">Lugar de Nacimiento</label>
+
+                    <select name="Nacimiento" id="Nacimiento" size="1">
+                        <option value="primera" selected>Panama</option>
+                        <option value="Segunda">Cocle</option>
+                        <option value="tercera">Chiriqui</option>
+                        <option value="cuarta">Los Santos</option>
+                        <option value="quinta">Darien</option>
+                        <option value="sexta">Panama oeste</option>
+                        <option value="septima">Bocas del toro</option>
+                        <option value="octava">Colon</option>
+                        <option value="novena">Veraguas</option>
+                        <option value="decima">Herrera</option>
+                    </select>
+                </fieldset>
+                <fieldset style="display: flex; flex-direction: column;">
+                    <legend>
+                        informacion del curso
+                    </legend>
+                    <!-- Facutad -->
+                    <label for="Facultad">Facultad</label>
+                    
+                    <Input type="radio" id="Fisc" name="1" value="Facultad de Ingeniería de Sistemas Computacionales">
+                    <label for="Fisc">Facultad de Ingeniería de Sistemas Computacionales</label>
+                    
+                    <Input type="radio" id="FCT" name="2" value="Facultad de Ciencias y Tecnología">
+                    <label for="FCT">Facultad de Ciencias y Tecnología</label>
+                    
+                    <Input type="radio" id="FCI" name="3" value="Facultad de Ingeniería Civil"> 
+                    <label for="FCI">Facultad de Ingeniería Civil</label>
+                      
+                    <Input type="radio" id="FII" name="4" value="Facultad de Ingeniería Industrial">
+                    <label for="FII">Facultad de Ingeniería Industrial</label>
+                      
+                    <Input type="radio" id="FIM" name="5" value="Facultad de Ingeniería Mecánica">
+                    <label for="FIM">Facultad de Ingeniería Mecánica</label>
+                           
+                        
+                    
+                        <!-- Tema de interes -->
+                         <fieldset>
+                            <legend>Tema de interes</legend>
+                            <input type="checkbox" id="programacion" value="Programacion"/> 
+                            <label for="programacion"> Programacion </label>
+                         </fieldset>
+                    <label for="temaInteres" style="display: flex; flex-direction: column;">Tema de interes</label>
+                    
+                    <input type="checkbox" id="temaInteres" value="Diseno"/> 
+                    <input type="checkbox" id="temaInteres" value="Tecnologia red"/> 
+                    <input type="checkbox" id="temaInteres" value="Investigacion"/>
+                </fieldset>
+                
+            </form>
+        </section>
+
+        <!-- Pie de pagina -->
+        <footer>
+
+        </footer>
+    </main>
+</body>
+</html>
