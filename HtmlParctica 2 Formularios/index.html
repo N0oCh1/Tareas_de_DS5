@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi informacion</title>
 </head>
-<body style="background-color: rgb(1, 1, 58); padding: 12px 200px 12px 200px; color: white; font-size: 16px; font-family:sans-serif; display: flex; flex-direction: column;">
+<body style="background-color: rgb(1, 1, 58); padding: 12px 200px 12px 200px; color: white; font-size: 16px; font-family:sans-serif; display: flex; flex-direction: column; gap: 12px;">
 <!-- encabezado  -->
     <header style="display: flex; width: 100%; flex-direction: row; gap: 20px">
         <h2>Ruben Feng</h2>
@@ -105,12 +105,47 @@
                 <textarea name="experiencia" title="Experiencia en programacion" placeholder="Descripcion" maxlength="200" rows = 10 style="padding: 12px; font-size: 16px; font-family:'Courier New', Courier, monospace"></textarea>
                 </fieldset>
                 
+                <fieldset style="display: flex; flex-direction: column; gap: 8px;">
+                    <legend>
+                        Información de Salud
+                    </legend>
+
+                    <label>Ingrese su peso: 
+                        <input type="range" id="peso" name="peso" min="0" max="400" step="1.00" value="0" oninput="P.value=parseFloat(peso.value)"> =
+                        <output name="P" for="peso">0.00</output> libras
+                    </label>
+           
+                    
+                
+
+                    <label>Ingrese su estatura:
+                        <input type="range" id="estatura" name="estatura" min="0" max="2.50" step="0.01" value="0.00" oninput="E.value=parseFloat(estatura.value)"> =
+                        <output name="E" for="estatura">0.00</output> cm
+                    </label>
+                    
+
+                    
+                    
+                    <label for="alergias">Escojer todas las alergias que apliquen</label>
+                    <label for="Rinitis"><input type="checkbox" id="Rinitis" value="Rinitis"/> Rinitis</label>
+                    <label for="Asma"><input type="checkbox" id="Asma" value="Asma"/> Asma</label>
+                    <label for="Lactosa"><input type="checkbox" id="Lactosa" value="Lactosa"/> Lactosa</label>
+                    <label for="Medicamentos"> Medicamentos, especificar:<textarea name="Medicamentos" id="Medicamentos"></textarea></label>
+                    <label for="Otros"> Otros, especificar:<textarea name="Otros" id="Otros"></textarea></label>
+                    
+                    
+                    
+
+                </fieldset>
+
             </form>
         </section>
 
         <!-- Pie de pagina -->
-        <footer>
-
+        <footer style="display: flex; flex-direction: row; justify-content: end;">
+            <a href="agradecimiento.html">
+                <button style="cursor: pointer; font-size: larger;"> Enviar ➡️</button>
+            </a>
         </footer>
     </main>
 </body>
