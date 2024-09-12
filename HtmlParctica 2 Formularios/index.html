@@ -1,152 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi informacion</title>
-</head>
-<body style="background-color: rgb(1, 1, 58); padding: 12px 200px 12px 200px; color: white; font-size: 16px; font-family:sans-serif; display: flex; flex-direction: column; gap: 12px;">
-<!-- encabezado  -->
+  </head>
+  <body
+    style="
+      background-color: rgb(1, 1, 58);
+      padding: 12px 200px 12px 200px;
+      color: white;
+      font-size: 16px;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    "
+  >
+    <!-- encabezado  -->
     <header style="display: flex; width: 100%; flex-direction: row; gap: 20px">
-        <h2>Ruben Feng</h2>
-        <h2>Ramses Szobotka</h2>
+      <h2>Ruben Feng</h2>
+      <h2>Ramses Szobotka</h2>
     </header>
 
     <main style="padding: 0px 200px 0px 200px">
-        <h1>Formulario</h1>
-        <!-- Formulario -->
-        <section>
-            <form style="display: flex; flex-direction: column; gap: 12px;">
-                <fieldset style="display: flex; flex-direction: column; gap: 8px; padding: 12px;" >
-                    <legend>
-                        Datos Personales 
-                    </legend>
-                    <!-- nombre -->
-                    <label for="Nombre">Nombre</label>
-                    <input type="text" id="Nombre" name="Nombre" placeholder="Nombre....." required> 
-                    <!-- Apellido -->
-                    <label for="Apellido"> Apellido</label>
-                    <input type="text" id="Apellido" name="Apellido" placeholder="Apellido......" required/>
-                    
-                    <!-- Cedula -->
-                    <label for="Nombre">Cedula</label>
-                    <input type="number" id="Cedula" name="Cedula" placeholder="Cedula......" required/>
-                    
-                    <!-- Fecha de nacimieto -->
-                    <label for="fechaNacimiento" >Fecha de nacimiento</label>
-                    <input type="date" min = "1950-1-1" max = "2100-1-1" id="fechaNacimiento" name="fechaNacimiento"required />
-                    
-                    <!-- Lugar de nacimeito -->
-                    <label for="Nacimiento" id="Nacimiento">Lugar de Nacimiento</label>
-                    <select name="Nacimiento" id="Nacimiento" size="1" required>
-                        <option value="primera" selected>Panama</option>
-                        <option value="Segunda">Cocle</option>
-                        <option value="tercera">Chiriqui</option>
-                        <option value="cuarta">Los Santos</option>
-                        <option value="quinta">Darien</option>
-                        <option value="sexta">Panama oeste</option>
-                        <option value="septima">Bocas del toro</option>
-                        <option value="octava">Colon</option>
-                        <option value="novena">Veraguas</option>
-                        <option value="decima">Herrera</option>
-                    </select>
-                </fieldset>
+      <h1>Formulario</h1>
+      <!-- Formulario -->
+      <section>
+        <form
+          style="display: flex; flex-direction: column; gap: 12px"
+          target="_blank"
+          action="agradecimiento.html"
+        >
+          <fieldset
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 8px;
+              padding: 12px;
+            "
+          >
+            <legend>Datos Personales</legend>
+            <!-- nombre -->
+            <label for="Nombre">Nombre</label>
+            <input
+              type="text"
+              id="Nombre"
+              name="Nombre"
+              placeholder="Manolo"
+              required
+            />
+            <!-- Apellido -->
+            <label for="Apellido"> Apellido</label>
+            <input
+              type="text"
+              id="Apellido"
+              name="Apellido"
+              placeholder="Sanchez"
+              required
+            />
 
+            <!-- Cedula -->
+            <label for="Nombre">Cedula</label>
+            <input
+              type="number"
+              id="Cedula"
+              name="Cedula"
+              placeholder="8-978-453"
+              required
+            />
 
-                <fieldset style="display: flex; flex-direction: column; gap: 8px; padding: 12px;">
-                    <legend>
-                        Informacion del curso
-                    </legend>
-                    <!-- Facutad -->
-                    <label for="Facultad">Facultad</label>
-                    
-                    <label for="Fisc">
-                        <Input type="radio" id="Fisc" name="facultad" value="Facultad de Ingeniería de Sistemas Computacionales">
-                        Facultad de Ingeniería de Sistemas Computacionales
-                    </label>
-                    <label for="FCT">
-                        <Input type="radio" id="FCT" name="facultad" value="Facultad de Ciencias y Tecnología">
-                        Facultad de Ciencias y Tecnología
-                    </label>
-                    <label for="FCI">
-                        <Input type="radio" id="FCI" name="facultad" value="Facultad de Ingeniería Civil"> 
-                        Facultad de Ingeniería Civil
-                    </label>
-                    <label for="FII">
-                        <Input type="radio" id="FII" name="facultad" value="Facultad de Ingeniería Industrial">
-                        Facultad de Ingeniería Industrial
-                    </label>
-                    <label for="FIM">
-                        <Input type="radio" id="FIM" name="facultad" value="Facultad de Ingeniería Mecánica">
-                        Facultad de Ingeniería Mecánica
-                    </label>
-                           <!-- Tema de interes -->
-                    <fieldset style="display: flex; flex-direction: column; gap: 8px;">
-                    <legend>Tema de interes</legend>
-                    <label for="programacion">
-                        <input type="checkbox" id="programacion" value="Programacion"/> 
-                        Programacion 
-                    </label>
-                    <label for="DisenoArte">
-                        <input type="checkbox" id="DisenoArte" value="Diseno"/> 
-                        Diseño y arte 
-                    </label>
-                    <label for="Red">
-                        <input type="checkbox" id="Red" value="Tecnologia red"/> 
-                        Tecnologia para conectividad en la Red 
-                    </label>
-                    <label for="inInno">
-                        <input type="checkbox" id="inInno" value="Investigacio e innovacion"/>
-                        Investigacion e Innovacion 
-                    </label>
-                    </fieldset>   
+            <!-- Fecha de nacimieto -->
+            <label for="fechaNacimiento">Fecha de nacimiento</label>
+            <input
+              type="date"
+              min="1950-1-1"
+              max="2100-1-1"
+              id="fechaNacimiento"
+              name="fechaNacimiento"
+              required
+            />
 
-                <label for="experiencia">Experiencia en Programacion</label>
-                <textarea name="experiencia" title="Experiencia en programacion" placeholder="Descripcion" maxlength="200" rows = 10 style="padding: 12px; font-size: 16px; font-family:'Courier New', Courier, monospace"></textarea>
-                </fieldset>
-                
-                <fieldset style="display: flex; flex-direction: column; gap: 8px;">
-                    <legend>
-                        Información de Salud
-                    </legend>
+            <!-- Lugar de nacimeito -->
+            <label for="Nacimiento" id="Nacimiento">Lugar de Nacimiento</label>
+            <select name="Nacimiento" id="Nacimiento" size="1" required>
+              <option value="primera" selected>Panama</option>
+              <option value="Segunda">Cocle</option>
+              <option value="tercera">Chiriqui</option>
+              <option value="cuarta">Los Santos</option>
+              <option value="quinta">Darien</option>
+              <option value="sexta">Panama oeste</option>
+              <option value="septima">Bocas del toro</option>
+              <option value="octava">Colon</option>
+              <option value="novena">Veraguas</option>
+              <option value="decima">Herrera</option>
+            </select>
+          </fieldset>
 
-                    <label>Ingrese su peso: 
-                        <input type="range" id="peso" name="peso" min="0" max="400" step="1.00" value="0" oninput="P.value=parseFloat(peso.value)"> =
-                        <output name="P" for="peso">0.00</output> libras
-                    </label>
-           
-                    
-                
+          <fieldset
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 8px;
+              padding: 12px;
+            "
+          >
+            <legend>Informacion del curso</legend>
+            <!-- Facutad -->
+            <label for="Facultad">Facultad</label>
 
-                    <label>Ingrese su estatura:
-                        <input type="range" id="estatura" name="estatura" min="0" max="2.50" step="0.01" value="0.00" oninput="E.value=parseFloat(estatura.value)"> =
-                        <output name="E" for="estatura">0.00</output> cm
-                    </label>
-                    
+            <label for="Fisc">
+              <input
+                type="radio"
+                id="Fisc"
+                name="facultad"
+                value="Facultad de Ingeniería de Sistemas Computacionales"
+              />
+              Facultad de Ingeniería de Sistemas Computacionales
+            </label>
+            <label for="FCT">
+              <input
+                type="radio"
+                id="FCT"
+                name="facultad"
+                value="Facultad de Ciencias y Tecnología"
+              />
+              Facultad de Ciencias y Tecnología
+            </label>
+            <label for="FCI">
+              <input
+                type="radio"
+                id="FCI"
+                name="facultad"
+                value="Facultad de Ingeniería Civil"
+              />
+              Facultad de Ingeniería Civil
+            </label>
+            <label for="FII">
+              <input
+                type="radio"
+                id="FII"
+                name="facultad"
+                value="Facultad de Ingeniería Industrial"
+              />
+              Facultad de Ingeniería Industrial
+            </label>
+            <label for="FIM">
+              <input
+                type="radio"
+                id="FIM"
+                name="facultad"
+                value="Facultad de Ingeniería Mecánica"
+              />
+              Facultad de Ingeniería Mecánica
+            </label>
+            <!-- Tema de interes -->
+            <fieldset style="display: flex; flex-direction: column; gap: 8px">
+              <legend>Tema de interes</legend>
+              <label for="programacion">
+                <input
+                  type="checkbox"
+                  id="programacion"
+                  value="Programacion"
+                  name="interes"
+                />
+                Programacion
+              </label>
+              <label for="DisenoArte">
+                <input
+                  type="checkbox"
+                  id="DisenoArte"
+                  value="Diseno"
+                  name="interes"
+                />
+                Diseño y arte
+              </label>
+              <label for="Red">
+                <input
+                  type="checkbox"
+                  id="Red"
+                  value="Tecnologia red"
+                  name="interes"
+                />
+                Tecnologia para conectividad en la Red
+              </label>
+              <label for="inInno">
+                <input
+                  type="checkbox"
+                  id="inInno"
+                  value="Investigacio e innovacion"
+                  name="interes"
+                />
+                Investigacion e Innovacion
+              </label>
+            </fieldset>
 
-                    
-                    
-                    <label for="alergias">Escojer todas las alergias que apliquen</label>
-                    <label for="Rinitis"><input type="checkbox" id="Rinitis" value="Rinitis"/> Rinitis</label>
-                    <label for="Asma"><input type="checkbox" id="Asma" value="Asma"/> Asma</label>
-                    <label for="Lactosa"><input type="checkbox" id="Lactosa" value="Lactosa"/> Lactosa</label>
-                    <label for="Medicamentos"> Medicamentos, especificar:<textarea name="Medicamentos" id="Medicamentos"></textarea></label>
-                    <label for="Otros"> Otros, especificar:<textarea name="Otros" id="Otros"></textarea></label>
-                    
-                    
-                    
+            <label for="experiencia">Experiencia en Programacion</label>
+            <textarea
+              name="experiencia"
+              title="Experiencia en programacion"
+              placeholder="Descripcion"
+              maxlength="200"
+              rows="10"
+              style="
+                padding: 12px;
+                font-size: 16px;
+                font-family: 'Courier New', Courier, monospace;
+              "
+            ></textarea>
+          </fieldset>
 
-                </fieldset>
+          <fieldset style="display: flex; flex-direction: column; gap: 8px">
+            <legend>Información de Salud</legend>
 
-            </form>
-        </section>
+            <label
+              >Ingrese su peso:
+              <input
+                type="range"
+                id="peso"
+                name="peso"
+                min="0"
+                max="400"
+                step="1.00"
+                value="0"
+                oninput="P.value=parseFloat(peso.value)"
+              />
+              = <output name="P" for="peso">0.00</output> libras
+            </label>
 
-        <!-- Pie de pagina -->
-        <footer style="display: flex; flex-direction: row; justify-content: end;">
-            <a href="agradecimiento.html">
-                <button style="cursor: pointer; font-size: larger;"> Enviar ➡️</button>
-            </a>
-        </footer>
+            <label
+              >Ingrese su estatura:
+              <input
+                type="range"
+                id="estatura"
+                name="estatura"
+                min="0"
+                max="2.50"
+                step="0.01"
+                value="0.00"
+                oninput="E.value=parseFloat(estatura.value)"
+              />
+              = <output name="E" for="estatura">0.00</output> cm
+            </label>
+
+            <label for="alergias"
+              >Escojer todas las alergias que apliquen</label
+            >
+            <label for="Rinitis"
+              ><input type="checkbox" id="Rinitis" value="Rinitis" />
+              Rinitis</label
+            >
+            <label for="Asma"
+              ><input type="checkbox" id="Asma" value="Asma" /> Asma</label
+            >
+            <label for="Lactosa"
+              ><input type="checkbox" id="Lactosa" value="Lactosa" />
+              Lactosa</label
+            >
+            <label for="Medicamentos"> Medicamentos, especificar:</label>
+            <textarea
+              name="Medicamentos"
+              id="Medicamentos"
+              placeholder="Medicamentos alergia"
+              rows="3"
+            ></textarea>
+            <label for="Otros"> Otros, especificar:</label>
+            <textarea
+              name="Otros"
+              id="Otros"
+              placeholder="Otros medicamentos alergia"
+              rows="3"
+            ></textarea>
+          </fieldset>
+          <input
+            type="submit"
+            style="cursor: pointer; font-size: larger"
+            value=" Enviar ➡️"
+          />
+        </form>
+      </section>
+
+      <!-- Pie de pagina -->
     </main>
-</body>
+  </body>
 </html>
