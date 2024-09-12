@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi informacion</title>
 </head>
-<body style="background-color: rgb(1, 1, 58); padding: 12px 36px 12px 36px; color: white; font-size: medium; display: flex; flex-direction: column;">
+<body style="background-color: rgb(1, 1, 58); padding: 12px 200px 12px 200px; color: white; font-size: 16px; font-family:sans-serif; display: flex; flex-direction: column;">
 <!-- encabezado  -->
     <header style="display: flex; width: 100%; flex-direction: row; gap: 20px">
         <h2>Ruben Feng</h2>
@@ -16,31 +16,29 @@
         <h1>Formulario</h1>
         <!-- Formulario -->
         <section>
-            <form>
-                <fieldset style="display: flex; flex-direction: column; gap: 8px;">
+            <form style="display: flex; flex-direction: column; gap: 12px;">
+                <fieldset style="display: flex; flex-direction: column; gap: 8px; padding: 12px;" >
                     <legend>
                         Datos Personales 
                     </legend>
                     <!-- nombre -->
                     <label for="Nombre">Nombre</label>
-                    <input type="text" id="Nombre" name="Nombre" placeholder="Nombre....."> 
+                    <input type="text" id="Nombre" name="Nombre" placeholder="Nombre....." required> 
                     <!-- Apellido -->
                     <label for="Apellido"> Apellido</label>
-                    <input type="text" id="Apellido" name="Apellido" placeholder="Apellido......"/>
+                    <input type="text" id="Apellido" name="Apellido" placeholder="Apellido......" required/>
                     
                     <!-- Cedula -->
                     <label for="Nombre">Cedula</label>
-                    <input type="number" id="Cedula" name="Cedula" placeholder="Cedula......"/>
+                    <input type="number" id="Cedula" name="Cedula" placeholder="Cedula......" required/>
                     
                     <!-- Fecha de nacimieto -->
                     <label for="fechaNacimiento" >Fecha de nacimiento</label>
-                    <input type="date" min = "1950-1-1" max = "2100-1-1" id="fechaNacimiento" name="fechaNacimiento" />
+                    <input type="date" min = "1950-1-1" max = "2100-1-1" id="fechaNacimiento" name="fechaNacimiento"required />
                     
                     <!-- Lugar de nacimeito -->
-                     
                     <label for="Nacimiento" id="Nacimiento">Lugar de Nacimiento</label>
-
-                    <select name="Nacimiento" id="Nacimiento" size="1">
+                    <select name="Nacimiento" id="Nacimiento" size="1" required>
                         <option value="primera" selected>Panama</option>
                         <option value="Segunda">Cocle</option>
                         <option value="tercera">Chiriqui</option>
@@ -53,41 +51,58 @@
                         <option value="decima">Herrera</option>
                     </select>
                 </fieldset>
-                <fieldset style="display: flex; flex-direction: column;">
+
+
+                <fieldset style="display: flex; flex-direction: column; gap: 8px; padding: 12px;">
                     <legend>
-                        informacion del curso
+                        Informacion del curso
                     </legend>
                     <!-- Facutad -->
                     <label for="Facultad">Facultad</label>
                     
-                    <Input type="radio" id="Fisc" name="1" value="Facultad de Ingeniería de Sistemas Computacionales">
-                    <label for="Fisc">Facultad de Ingeniería de Sistemas Computacionales</label>
-                    
-                    <Input type="radio" id="FCT" name="2" value="Facultad de Ciencias y Tecnología">
-                    <label for="FCT">Facultad de Ciencias y Tecnología</label>
-                    
-                    <Input type="radio" id="FCI" name="3" value="Facultad de Ingeniería Civil"> 
-                    <label for="FCI">Facultad de Ingeniería Civil</label>
-                      
-                    <Input type="radio" id="FII" name="4" value="Facultad de Ingeniería Industrial">
-                    <label for="FII">Facultad de Ingeniería Industrial</label>
-                      
-                    <Input type="radio" id="FIM" name="5" value="Facultad de Ingeniería Mecánica">
-                    <label for="FIM">Facultad de Ingeniería Mecánica</label>
-                           
-                        
-                    
-                        <!-- Tema de interes -->
-                         <fieldset>
-                            <legend>Tema de interes</legend>
-                            <input type="checkbox" id="programacion" value="Programacion"/> 
-                            <label for="programacion"> Programacion </label>
-                         </fieldset>
-                    <label for="temaInteres" style="display: flex; flex-direction: column;">Tema de interes</label>
-                    
-                    <input type="checkbox" id="temaInteres" value="Diseno"/> 
-                    <input type="checkbox" id="temaInteres" value="Tecnologia red"/> 
-                    <input type="checkbox" id="temaInteres" value="Investigacion"/>
+                    <label for="Fisc">
+                        <Input type="radio" id="Fisc" name="facultad" value="Facultad de Ingeniería de Sistemas Computacionales">
+                        Facultad de Ingeniería de Sistemas Computacionales
+                    </label>
+                    <label for="FCT">
+                        <Input type="radio" id="FCT" name="facultad" value="Facultad de Ciencias y Tecnología">
+                        Facultad de Ciencias y Tecnología
+                    </label>
+                    <label for="FCI">
+                        <Input type="radio" id="FCI" name="facultad" value="Facultad de Ingeniería Civil"> 
+                        Facultad de Ingeniería Civil
+                    </label>
+                    <label for="FII">
+                        <Input type="radio" id="FII" name="facultad" value="Facultad de Ingeniería Industrial">
+                        Facultad de Ingeniería Industrial
+                    </label>
+                    <label for="FIM">
+                        <Input type="radio" id="FIM" name="facultad" value="Facultad de Ingeniería Mecánica">
+                        Facultad de Ingeniería Mecánica
+                    </label>
+                           <!-- Tema de interes -->
+                    <fieldset style="display: flex; flex-direction: column; gap: 8px;">
+                    <legend>Tema de interes</legend>
+                    <label for="programacion">
+                        <input type="checkbox" id="programacion" value="Programacion"/> 
+                        Programacion 
+                    </label>
+                    <label for="DisenoArte">
+                        <input type="checkbox" id="DisenoArte" value="Diseno"/> 
+                        Diseño y arte 
+                    </label>
+                    <label for="Red">
+                        <input type="checkbox" id="Red" value="Tecnologia red"/> 
+                        Tecnologia para conectividad en la Red 
+                    </label>
+                    <label for="inInno">
+                        <input type="checkbox" id="inInno" value="Investigacio e innovacion"/>
+                        Investigacion e Innovacion 
+                    </label>
+                    </fieldset>   
+
+                <label for="experiencia">Experiencia en Programacion</label>
+                <textarea name="experiencia" title="Experiencia en programacion" placeholder="Descripcion" maxlength="200" rows = 10 style="padding: 12px; font-size: 16px; font-family:'Courier New', Courier, monospace"></textarea>
                 </fieldset>
                 
             </form>
