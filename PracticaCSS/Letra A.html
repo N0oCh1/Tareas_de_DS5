@@ -6,48 +6,123 @@
     <title>Document</title>
 </head>
 <style>
-.image{
-    height: 3px;
-    border: 3px solid black;
-    border-radius: 10 px;
-}
-.palabras{
-    
-    background-color: azure;
-    color:black;
-    font-style: italic;
-    text-align: center;
-    padding: 3px;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-}
+    *{
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    main{
+        max-width: 800px;
+        min-width: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap:12px;
+    }
+    .palabraDefinicion{
+        background-color: white;
+        color: black;
+        display: flex;
+        border-radius: 8px;
+        flex-direction: row;
+        border: 2px solid black;
+        img{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius:8px ;
+        }
+        div{
+            padding: 12px;
+            
+        }
+    }
+    @media(max-width: 500px){
+        .palabraDefinicion{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .introduccion{
+        background-color: white;
+        padding: 12px;
+    }
+    .titulo{
+        width: 100%;
+        text-align: center;
+        background-color: white;
+        border-radius: 8px;
+    }
 #cuerpo{
     background-color: rgb(140, 97, 189);
     color: black;
 }
-#titulo{
-    text-align: center;
-    padding: 3px;
-    width: 400px;
-    text-align: center;
-    color: black;
-    background-color:azure;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-}
 </style>
 <title>Letra H</title>
-
-<header id="titulo">
-    <h1>Letra A</h1>
-</header>
-
 <body id="cuerpo">
-    <section id="Descripcion" class="palabras">
-        <p>Es la primera letra del alfabeto</p>
-    </section>
+    <main id="Descripcion" class="palabras">
+        <header class="titulo">
+            <h1>Letra A</h1>
+        </header>
+        <p class="introduccion">Es la primera letra del alfabeto</p>
+        <div class="palabraDefinicion">
+            <div>
+                <h3>Avion</h3>
+                <p>
+                    es un aerodino de ala fija, o aeronave con mayor densidad que el aire, dotado de alas y un espacio de carga, y capaz de volar impulsado por uno o más motores.
+                </p>
+            </div>
+            <img src="./public/avionn.webp" alt="Avion"/>
+        </div>
+
+        <div class="palabraDefinicion">
+            <div>
+                <h3>Arbol</h3>
+                <p>
+                    Planta de tallo leñoso y elevado, que se ramifica a cierta altura del suelo.
+                </p>
+            </div>
+            <img src="./public/arbol.webp" alt="arbol"/>
+        </div>
+
+        <div class="palabraDefinicion">
+            <div>
+                <h3>Antena</h3>
+                <p>
+                    Una antena es un dispositivo normalmente conductor metálico, diseñado con el objetivo de emitir y/o recibir ondas electromagnéticas hacia el espacio libre.
+                </p>
+            </div>
+            <img src="./public/Antena.webp" alt="Antena"/>
+        </div>
+
+        <div class="palabraDefinicion">
+            <div>
+                <h3>Araña</h3>
+                <p>
+                    son el orden más numeroso de la clase Arachnida, lejanamente emparentadas con otros grupos de artrópodos, como los insectos, con los que no deben confundirse.                 
+                </p>
+            </div>
+            <img src="./public/arana.webp" alt="Arana"/>
+        </div>
+        <div class="palabraDefinicion">
+            <div>
+                <h3>Aguila</h3>
+                <p>
+                    es el nombre dado a las aves de presa, del orden de Accipitriformes,​ familia Accipitridae, subfamilia Buteoninae.            
+                </p>
+            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Bald_Eagle_Fly-by_%2848713206322%29.jpg/250px-Bald_Eagle_Fly-by_%2848713206322%29.jpg" alt="Aguila"/>
+        </div>
+        <a href="HOME.html"><button>Regresar</button></a>
+    </main>
 </body>
 </html>
