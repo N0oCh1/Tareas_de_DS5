@@ -6,39 +6,56 @@
     <title>DICCIONARION.com</title>
 </head>
 <style>
+    a{
+        text-decoration: none;
+        padding: 24px;
+    }
     *{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     body{
         background-color: rgb(0, 0, 50);
         color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         font-size: 20px;
     }
     table{
         width: min-content;
         border-spacing: 0;
     }
-    
+    .divTable{
+        display: flex;
+        justify-content: center;
+    }
     .cellStyle{
         td{
             font-weight: 500;
             border: 1px solid white;
             text-align: center;
-            padding: 24px;
+            padding-top: 24px;
+            padding-bottom: 24px;
         }
     }
 
     .cellSelect{
         font-weight: 700;
-        color: yellow;
+        a{
+            color: yellow;
+        }
     }
     .cellSelect:hover{
         background-color: yellow;
-        font-weight: 800;
-        color: rgb(0, 0, 50);
+        a{
+            color: rgb(0, 0, 50);
+        }
     }
     .cellSelect:active{
-        background-color: white;
+        a{
+            background-color: white;
+        }
     }
     
 </style>
@@ -51,43 +68,54 @@
             <p>
                 Bienvenidos al sitio de las mejores definiciones de Panama.
             </p>
-            <table>
-                <tr class="cellStyle">
-                    <td class="cellSelect">A</td>
-                    <td>B</td>
-                    <td>C</td>
-                    <td>D</td>
-                    <td>E</td>
-                </tr>
-                <tr class="cellStyle">
-                    <td>F</td>
-                    <td class="cellSelect">G</td>
-                    <td>H</td>
-                    <td>I</td>
-                    <td>J</td>
-                </tr>
-                <tr class="cellStyle">
-                    <td>K</td>
-                    <td>L</td>
-                    <td class="cellSelect">M</td>
-                    <td>N</td>
-                    <td>O</td>
-                </tr>
-                <tr class="cellStyle">
-                    <td>P</td>
-                    <td>Q</td>
-                    <td>R</td>
-                    <td class="cellSelect">S</td>
-                    <td>T</td>
-                </tr>
-                <tr class="cellStyle">
-                    <td>U</td>
-                    <td>V</td>
-                    <td>W</td>
-                    <td>X</td>
-                    <td class="cellSelect">Y</td>
-                </tr>
-            </table>
+            <div class="divTable">
+                <table>
+                    <tr class="cellStyle">
+                        <td class="cellSelect"><a href="Letra A.html">A</a></td>
+                        <td>B</td>
+                        <td>C</td>
+                        <td>D</td>
+                        <td>E</td>
+                    </tr>
+                    <tr class="cellStyle">
+                        <td>F</td>
+                        <td class="cellSelect"><a href="Letra G.html">G</a></td>
+                        <td>H</td>
+                        <td>I</td>
+                        <td>J</td>
+                    </tr>
+                    <tr class="cellStyle">
+                        <td>K</td>
+                        <td>L</td>
+                        <td class="cellSelect"><a href="Letra M.html">M</a></td>
+                        <td>N</td>
+                        <td>O</td>
+                    </tr>
+                    <tr class="cellStyle">
+                        <td>P</td>
+                        <td>Q</td>
+                        <td>R</td>
+                        <td class="cellSelect"><a href="Letra S.html">S</a></td>
+                        <td>T</td>
+                    </tr>
+                    <tr class="cellStyle">
+                        <td>U</td>
+                        <td>V</td>
+                        <td>W</td>
+                        <td>X</td>
+                        <td class="cellSelect"><a href="Letra Y.html">Y</a></td>
+                    </tr>
+                </table>
+            </div>
+            <section>
+                <p> Taller practico #3</p>
+                <p>INTEGRANTES :</p>
+                <ul>
+                    <li>Ruben Feng</li>
+                    <li>Ramses Szobotka</li>
+                </ul>
+            </section>
+            
         </section>
         <footer>
 
