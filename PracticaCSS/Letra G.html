@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 24px;
+        padding-right: 24px;
+        background-color: coral;
+    }
+    main{
+        max-width: 800px;
+        min-width: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap:12px;
+    }
+    .palabraDefinicion{
+        background-color: white;
+        color: black;
+        display: flex;
+        border-radius: 8px;
+        flex-direction: row;
+        border: 2px solid black;
+        img{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius:8px ;
+        }
+        div{
+            padding: 12px;
+            
+        }
+    }
+    @media(max-width: 500px){
+        .palabraDefinicion{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .introduccion{
+        background-color: white;
+        padding: 12px;
+    }
+    .titulo{
+        width: 100%;
+        text-align: center;
+        background-color: white;
+        border-radius: 8px;
+    }
+</style>
+<title>Letra G</title>
+<body id="cuerpo">
+    <main id="Descripcion" class="palabras">
+        <header class="titulo">
+            <h1>Letra G</h1>
+        </header>
+        <p class="introduccion">es la séptima letra del alfabeto español y tiene varias características interesantes. Puede tener un sonido suave (como en "gente") o un sonido duro (como en "gato").</p>
+        <div class="palabraDefinicion">
+            <div>
+                <h3>Avion</h3>
+                <p>
+                    es un aerodino de ala fija, o aeronave con mayor densidad que el aire, dotado de alas y un espacio de carga, y capaz de volar impulsado por uno o más motores.
+                </p>
+            </div>
+            <img src="./public/avionn.webp" alt="Avion"/>
+        </div>
+
+        <div class="palabraDefinicion">
+            <div>
+                <h3>Arbol</h3>
+                <p>
+                    Planta de tallo leñoso y elevado, que se ramifica a cierta altura del suelo.
+                </p>
+            </div>
+            <img src="./public/arbol.webp" alt="arbol"/>
+        </div>
+
+        <div class="palabraDefinicion">
+            <div>
+                <h3>Antena</h3>
+                <p>
+                    Una antena es un dispositivo normalmente conductor metálico, diseñado con el objetivo de emitir y/o recibir ondas electromagnéticas hacia el espacio libre.
+                </p>
+            </div>
+            <img src="./public/Antena.webp" alt="Antena"/>
+        </div>
+
+        <div class="palabraDefinicion">
+            <div>
+                <h3>Araña</h3>
+                <p>
+                    son el orden más numeroso de la clase Arachnida, lejanamente emparentadas con otros grupos de artrópodos, como los insectos, con los que no deben confundirse.                 
+                </p>
+            </div>
+            <img src="./public/arana.webp" alt="Arana"/>
+        </div>
+        <div class="palabraDefinicion">
+            <div>
+                <h3>Aguila</h3>
+                <p>
+                    es el nombre dado a las aves de presa, del orden de Accipitriformes,​ familia Accipitridae, subfamilia Buteoninae.            
+                </p>
+            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Bald_Eagle_Fly-by_%2848713206322%29.jpg/250px-Bald_Eagle_Fly-by_%2848713206322%29.jpg" alt="Aguila"/>
+        </div>
+        <a href="HOME.html"><button>Regresar</button></a>
+    </main>
+</body>
+</html>
