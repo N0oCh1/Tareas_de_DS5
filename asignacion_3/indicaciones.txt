@@ -1,0 +1,40 @@
+•	Crear un wireframe que muestre la distribución de los elementos de contenido dentro del sitio que deben entregar. El wireframe debe coincidir con el sitio web desarrollado. 
+•	Deben entregar el wireframe en formato .pdf para evaluación.
+•	En la página de CONTACTOS debe colocar el nombre de los integrantes del grupo. Si no aparece en esta página, no serán considerados para la nota.
+•	Desarrollar un sitio web utilizando etiquetas HTML para contenido y CSS en referencia externa (archivo independiente) para el estilo de todas las páginas. Es posible usar CSS internos en los casos donde usted lo considera necesario. 
+•	Cada página debe tener un nombre y título propio (la primera siempre debe ser home).
+•	Asegúrese que cada página tiene un color de fondo claramente diferente al negro y al blanco. 
+•	Cada página debe manejar el mismo tipo de letra para los títulos*, y un tipo de letra diferente para el contenido (el contenido es igual en todos los documentos). 
+•	Los enlaces <a> no deben tener líneas subrayadas y deben aparecer en negrita. 
+•	Debe colocar comentarios explicativos a través de su código.
+•	Debe crear un logo hipotético para este trabajo. nu
+•	Recuerde utilizar el modelo de caja siguiendo el formato de <header>, <section> y <footer>.
+Desarrollo del taller:
+1.	Usted como desarrollador de la cadena de televisión Noticias SA Nacional , debe crear un sitio para las noticias del canal.
+
+2.	El sitio consiste en 4 páginas con el siguiente contenido:
+a.	INICIO: 
+i.	Es la primera página que abre el usuario. Debe aparecer el Logo del canal de noticias arriba con un banner de lado a lado que resalte el logo. 
+ii.	Contiene un menú que permite navegar entre las siguientes páginas o regresar al Inicio.
+iii.	Se presentan 3 noticias nacionales relevantes (un párrafo de largo cada una) con sus respectivas imágenes. 
+iv.	Cada noticia debe tener un título* propio y su contenido e imagen exactamente debajo. 
+v.	En la parte inferior, aparecen las mismas opciones para entrar a las demás páginas que en el menú, pero aquí se presenta como una lista en una letra más pequeña y un color más tenue, al lado izquierdo de la pantalla. 
+ 
+
+b.	DEPORTIVAS:
+i.	Debe aparecer el Logo del canal de noticias arriba con un banner de lado a lado que resalte el logo. 
+ii.	Contiene un menú que permite navegar entre las siguientes páginas o regresar al Inicio.
+iii.	Se presentan los videos de las mejores jugadas de 3 deportes diferentes. Cada video está incluido dentro de nuestra página y tiene su título* y un pequeño texto descriptor. 
+iv.	En la parte inferior, aparecen las mismas opciones para entrar a las demás páginas que en el menú, pero aquí se presenta como una lista en una letra más pequeña y un color más tenue, al lado izquierdo de la pantalla. 
+
+c.	INTERNACIONALES:
+i.	Debe aparecer el Logo del canal de noticias arriba con un banner de lado a lado que resalte el logo. 
+ii.	Contiene un menú que permite navegar entre las siguientes páginas o regresar al Inicio.
+iii.	Se presentan 3 noticias internacionales de otras páginas de noticias.  Se debe colocar un título* con la imagen de la noticia. Debajo de la imagen aparece el nombre de la página como enlace <a>.
+iv.	En la parte inferior, aparecen las mismas opciones para entrar a las demás páginas que en el menú, pero aquí se presenta como una lista en una letra más pequeña y un color más tenue, al lado izquierdo de la pantalla. 
+
+d.	CONTACTANOS:
+i.	Debe aparecer el Logo del canal de noticias arriba con un banner de lado a lado que resalte el logo. 
+ii.	No lleva el menú en la parte de arriba.
+iii.	Colocamos las imágenes de los integrantes del grupo con su nombre en negritas con el formato de título* y una descripción de cada uno, en el Font regular de la página. 
+iv.	En la parte inferior, aparecen las mismas opciones para entrar a las demás páginas que en el menú, pero aquí se presenta como una lista en una letra más pequeña y un color más tenue, al lado izquierdo de la pantalla. 
