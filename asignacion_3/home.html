@@ -3,10 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INICIO</title>
-    <link rel="stylesheet" href="./styles/home.css"/>
+    <title>Canal de Noticias - Inicio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilo del banner y logo */
+        header {
+            text-align: center;
+            background-color: #444;
+            padding: 50px;
+            border: 2px solid black;
+        }
+
+        /* Estilo del menú de navegación */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            background-color: #444;
+            padding: 20px;
+            border: 2px solid black;
+        }
+
+        nav div a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        /* Estilo del contenido principal */
+        .contenido {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        .noticia {
+            text-align: center;
+            margin-bottom: 20px;
+            border: 2px solid black;
+            padding: 10px;
+            img{
+                width: 300;
+            }
+        }
+
+        .noticia h2,
+        .noticia img,
+        .noticia p {
+            border: 1px solid black;
+            margin: 10px 0;
+            padding: 5px;
+        }
+
+        /* Estilo del pie de página */
+        footer {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            font-size: smaller;
+            color: lightgray;
+        }
+
+        footer ul li {
+            margin: 3px 0;
+        }
+
+        footer a {
+            color: lightgray;
+            text-decoration: none;
+        }
+
+        footer div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer p {
+            font-size: smaller;
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
+    <!-- Encabezado con el logo del canal de noticias y banner -->
+    <header>
+        <img src="logo.png" alt="Logo del Canal de Noticias" width="200">
+    </header>
     
+    <!-- Menú de navegación -->
+    <nav>
+        <div><a href="home.html">Home</a></div>
+        <div><a href="Deportivas.html">Deportivas</a></div>
+        <div><a href="Internacionales.html">Internacionales</a></div>
+        <div><a href="Contactos.html">Contáctanos</a></div>
+    </nav>
+<section>
+    <!-- Contenido principal de la página -->
+    <div class="contenido">
+        <!-- Noticia 1 -->
+        <div class="noticia">
+            <h2>Título de la Noticia 1</h2>
+            <img src="noticia1.jpg" alt="Imagen Noticia 1" > 
+            <p>Contenido de la noticia 1. Un párrafo de largo que resuma la información importante de la noticia.</p>
+        </div>
+
+        <!-- Noticia 2 -->
+        <div class="noticia">
+            <h2>Título de la Noticia 2</h2>
+            <img src="noticia2.jpg" alt="Imagen Noticia 2"> 
+            <p>Contenido de la noticia 2. Un párrafo de largo que resuma la información importante de la noticia.</p>
+        </div>
+
+        <!-- Noticia 3 -->
+        <div class="noticia">
+            <h2>Título de la Noticia 3</h2>
+            <img src="noticia3.jpg" alt="Imagen Noticia 3"> 
+            <p>Contenido de la noticia 3. Un párrafo de largo que resuma la información importante de la noticia.</p>
+        </div>
+    </div>
+</section>
+    <!-- Pie de página con las opciones del menú como lista -->
+    <footer>
+        <div>
+            <ul>
+                <p>Menú:</p>
+                <li><a href="index.html">-Home</a></li>
+                <li><a href="deportivas.html">-Deportivas</a></li>
+                <li><a href="internacionales.html">-Internacionales</a></li>
+                <li><a href="contactanos.html">-Contáctanos</a></li>
+            </ul>
+            <p>&copy; 2024 Canal de Noticias. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
