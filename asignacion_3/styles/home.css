@@ -2,6 +2,10 @@
     font-family: 'Times New Roman', Times, serif;
 }
 body{
+    background-image: url("../Publico/newpapr.webp");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 700px;
     background-color: rgb(216, 188, 172);
     display: flex;
     flex-direction: column;
@@ -9,12 +13,21 @@ body{
     justify-content: center;
 }
 main{
-    background-color: white;
+    background-color: rgb(251, 249, 239);
     max-width: 910px;
     width: 100%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
+hr{
+    border: 1px solid gray;
+    width: 75%;
+}
 .contenidoNoticias{
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,14 +56,16 @@ main{
 
 /* estilos para las noticias */
 .noticia{
+    background-color: white;
     max-width: 450px;
     width: 100%;
     display: flex;
     gap: 4px;
     flex-direction: column;
     align-items: center;
-    border-bottom: 2px solid black;
     padding-bottom: 24px;
+    border-radius: 8px;
+    border: 1px solid rgb(248, 243, 232);
     header{
         text-align: center;
         border-bottom: 8px solid transparent;
@@ -71,10 +86,11 @@ main{
         }
     }
     .descripcionNoticia{
-        border-bottom-right-radius: 8px;
-        border-bottom-left-radius: 8px;
+        background-color: white;
+        
         p{
             padding: 12px;
+            
         }
     }
 }
