@@ -14,7 +14,7 @@ body{
 }
 main{
     background-color: rgb(251, 249, 239);
-    max-width: 910px;
+    max-width: 1440px;
     width: 100%;
     border-radius: 8px;
     display: flex;
@@ -60,6 +60,7 @@ hr{
     border-radius: 8px;
     a{
         width: 100%;
+        
     }
 }
 .navButton{
@@ -69,15 +70,19 @@ hr{
     cursor: pointer;
     border: none;
     padding: 8px 12px 8px 12px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+
 }
 .navButton:hover{
-    background-color: antiquewhite;
+    background-color: rgb(255, 221, 176);    
 }
+
 
 /* estilos para las noticias */
 .noticia{
     background-color: white;
-    max-width: 450px;
+    max-width: 700px;
     width: 100%;
     display: flex;
     gap: 4px;
@@ -87,6 +92,7 @@ hr{
     border-radius: 8px;
     border: 1px solid rgb(248, 243, 232);
     header{
+        font-size: 30px;
         text-align: center;
         border-bottom: 8px solid transparent;
         padding: 16px;
@@ -110,7 +116,7 @@ hr{
         
         p{
             padding: 12px;
-            
+            font-size: 20px;
         }
     }
 }
@@ -142,6 +148,5 @@ footer div {
 }
 
 footer p {
-    font-size: smaller;
-    margin: auto;
+    font-size: 20px;
 }
