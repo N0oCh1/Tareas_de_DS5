@@ -1,7 +1,10 @@
+/*estilo de letra para todo el html*/
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
 /* Estilo general del body */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
     background: linear-gradient(to bottom right, #1a1a2e, #3a3d8e, #6a097d); 
     color: white; 
 }
@@ -14,7 +17,7 @@ body {
 }
 
 /* Estilo del banner */
-.banner {
+.banner{
     display: flex;
     padding: 24px;
     border-top-left-radius: 8px;
@@ -23,12 +26,16 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-.banner h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40px;
-    color: #FBEDDE; /* Color suave para contrastar */
+    h1{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 40px;
+        margin: 0;
+    }
+    h3{
+        text-align: left;
+        margin: 0;
+        font-size: 25px;
+    }
 }
 
 /* Estilo del header */
@@ -67,7 +74,7 @@ header {
 .miembros h2 {
     font-weight: bold;
     margin: 10px 0;
-    color: #FBEDDE; /* Color contrastante */
+    color: #FBEDDE; 
 }
 
 .miembros img,
@@ -90,7 +97,7 @@ footer ul {
     list-style: none;
     padding: 0;
     font-size: smaller;
-    color: #FBEDDE; /* Color más claro para los enlaces */
+    color: #FBEDDE; 
 }
 
 footer ul li {
