@@ -27,6 +27,25 @@ hr{
     border: 1px solid gray;
     width: 75%;
 }
+.logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+.banner{
+    display: flex;
+    padding: 24px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #FBEDDE;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 40px;
+    }
+}
 .contenidoNoticias{
     
     display: flex;
@@ -49,7 +68,7 @@ hr{
     width: 100%;
     cursor: pointer;
     border: none;
-    padding: 4px 12px 4px 12px;
+    padding: 8px 12px 8px 12px;
 }
 .navButton:hover{
     background-color: antiquewhite;
