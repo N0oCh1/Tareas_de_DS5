@@ -20,6 +20,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 8px;
+    padding-bottom: 2rem;
 }
 
 hr{
@@ -93,4 +94,35 @@ hr{
             
         }
     }
+}
+footer {
+    color: white; 
+    padding: 10px;
+    text-align: left;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    font-size: smaller;
+    color: black; 
+}
+
+footer ul li {
+    margin: 3px 0;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer p {
+    font-size: smaller;
+    margin: auto;
 }
