@@ -15,7 +15,7 @@ body{
 }
 main{
     background-color: rgb(251, 249, 239);
-    max-width: 910px;
+    max-width: 1440px;
     width: 100%;
     border-radius: 8px;
     display: flex;
@@ -74,8 +74,11 @@ hr{
     width: 100%;
     cursor: pointer;
     border: none;
-    padding: 4px 12px 4px 12px;
+    padding: 8px 12px 8px 12px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+
 }
 .navButton:hover{
-    background-color: antiquewhite;
+    background-color: rgb(255, 221, 176);    
 }
