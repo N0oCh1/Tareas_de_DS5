@@ -82,3 +82,70 @@ hr{
 .navButton:hover{
     background-color: rgb(255, 221, 176);    
 }
+.noticia{
+    background-color: white;
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 24px;
+    border-radius: 8px;
+    border: 1px solid rgb(248, 243, 232);
+    header{
+        font-size: 30px;
+        text-align: center;
+        border-bottom: 8px solid transparent;
+        padding: 16px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        background-image: linear-gradient(white, white), linear-gradient(45deg, rgb(255, 0, 0), rgb(255, 0, 234));
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+    }
+}
+
+.video{
+    padding: 12px;
+    
+}
+.descripcionNoticia{
+    background-color: white;
+    
+    p{
+        padding: 12px;
+        font-size: 20px;
+    }
+}
+
+footer {
+color: white; 
+padding: 10px;
+text-align: left;
+}
+
+footer ul {
+list-style: none;
+padding: 0;
+font-size: 20px;
+color: black; 
+}
+
+footer ul li {
+margin: 3px 0;
+}
+
+footer a {
+text-decoration: none;
+}
+
+footer div {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+footer p {
+font-size: 20px;
+}
