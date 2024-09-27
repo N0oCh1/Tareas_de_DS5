@@ -96,7 +96,7 @@ footer {
 footer ul {
     list-style: none;
     padding: 0;
-    font-size: smaller;
+    font-size: 30px;
     color: #FBEDDE; 
 }
 
@@ -116,7 +116,7 @@ footer div {
 }
 
 footer p {
-    font-size: smaller;
+    font-size: 30px;
     margin: auto;
     color: #FBEDDE;
 }
