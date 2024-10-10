@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Text</title>
+</head>
+<style>
+    html{
+    }
+    *{
+        padding: 0;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        background-image: linear-gradient(45deg, rgb(24, 0, 81), rgb(190, 124, 1));
+    }
+
+    main{
+        overflow-x: none;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 1000px;
+        width: 100%;
+        padding: 16px;
+        gap:16px;
+        border-radius: 8px;
+
+    }
+    .titulo{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+        border-radius: 8px;
+    }
+    section{
+        width: 100%;
+    }
+    .nav{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        width: 100%;
+        div{
+            width: 100%;
+            border:  1px solid black;
+            p{
+                text-align: center;
+            }
+        }
+    }
+    .nav div:hover{
+        background-color: rgb(187, 187, 187);
+        cursor: pointer;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        background-color: whitesmoke;
+        gap: 8px;
+        border: 1px solid black;
+        border-radius:  8px;
+        padding: 8px;
+    }
+
+
+    .section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    footer{
+        border: 1px dashed black;
+        width: 100%;
+        background-color: white;
+        border-radius: 8px;
+        div{
+           padding: 12px;
+            width: 100%;
+        }
+    }
+    .pc{
+        visibility: visible;
+    }
+    .tablet{
+        visibility: hidden;
+        
+    }
+    .phone{
+        visibility: hidden;
+    }
+    @media (max-width:780px) and (min-width:501px){
+        body{
+            background-image: linear-gradient(45deg, rgb(0, 51, 81), rgb(4, 190, 1));
+        }
+        .card{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .section{
+            display: flex;
+            flex-direction: column;
+            gap:16;
+        }
+        .pc{
+            visibility: hidden;
+        }
+        .tablet{
+            visibility: visible;
+        }
+        .phone{
+            visibility: hidden;
+        }
+    }
+    @media (max-width: 501px) {
+        body{
+            background-image: linear-gradient(45deg, rgb(81, 0, 58), rgb(190, 73, 1));
+        }
+        .card{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            div{
+                width: 100%;
+                border:  1px solid black;
+                p{
+                    text-align: center;
+                }
+            }
+        }
+        .section{
+            display: flex;
+            flex-direction: column;
+        }
+        .pc{
+            visibility: hidden;
+        }
+        .tablet{
+            visibility: hidden;
+        }
+        .phone{
+            visibility: visible;
+        }
+    }
+        
+</style>
+<body>
+    <main>
+        <section>
+            <div class="header">
+                <div class="titulo">
+                    <h2 class="phone">📱</h2>
+                    <h2 class="tablet">💻</h2>
+                    <h2 class="pc">🖥️</h2>
+                    <h2>
+                        Lorem Ipsum
+                    </h2>
+                </div>
+                
+                <nav class="nav">
+                    <div>
+                        <p>opcion 1</p>
+                    </div>
+                    <div>
+                        <p>opcion 2</p>
+                    </div>
+                    <div>
+                        <p>opcion 3</p>
+                    </div>
+                    <div>
+                        <p>opcion 4</p>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+        <ul class="section">
+            <li class="card">
+                <img alt="Cosas" src="https://placehold.co/200x150"/>
+                <div>
+                    <p>
+                        <h4>Lorem ipsum</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies, lectus lacinia feugiat pellentesque, nisl tortor venenatis ligula, vitae ultrices nisl ante a sem. Proin non diam venenatis ante maximus lacinia. Sed sed augue in tortor suscipit ultrices pharetra nec risus. Nunc eu elit ut massa ultrices posuere eu non orci. Donec sed leo in tellus consectetur condimentum. Aliquam id egestas sapien. Aliquam nibh neque, bibendum at rhoncus quis, pellentesque sed odio. Nunc nunc arcu, interdum in ante vitae, dictum sagittis ante. Phasellus sit amet tortor at turpis consectetur convallis vel vitae urna.
+
+                    </p>
+                </div>
+            </li>
+            <li class="card">
+                <img alt="Cosas"  src="https://placehold.co/200x150"/>
+                <div>
+                    <p>
+                        <h4>Lorem ipsum</h4>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies, lectus lacinia feugiat pellentesque, nisl tortor venenatis ligula, vitae ultrices nisl ante a sem. Proin non diam venenatis ante maximus lacinia. Sed sed augue in tortor suscipit ultrices pharetra nec risus. Nunc eu elit ut massa ultrices posuere eu non orci. Donec sed leo in tellus consectetur condimentum. Aliquam id egestas sapien. Aliquam nibh neque, bibendum at rhoncus quis, pellentesque sed odio. Nunc nunc arcu, interdum in ante vitae, dictum sagittis ante. Phasellus sit amet tortor at turpis consectetur convallis vel vitae urna.
+                    </p>
+                </div>
+            </li>
+            <li class="card">
+                <img alt="Cosas"  src="https://placehold.co/200x150"/>
+                <div>
+                    <h4>Lorem ipsum</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies, lectus lacinia feugiat pellentesque, nisl tortor venenatis ligula, vitae ultrices nisl ante a sem. Proin non diam venenatis ante maximus lacinia. Sed sed augue in tortor suscipit ultrices pharetra nec risus. Nunc eu elit ut massa ultrices posuere eu non orci. Donec sed leo in tellus consectetur condimentum. Aliquam id egestas sapien. Aliquam nibh neque, bibendum at rhoncus quis, pellentesque sed odio. Nunc nunc arcu, interdum in ante vitae, dictum sagittis ante. Phasellus sit amet tortor at turpis consectetur convallis vel vitae urna.
+                    </p>
+                </div>
+            </li>
+            <li class="card">
+                <img alt="Cosas"  src="https://placehold.co/200x150"/>
+                <div>
+                    <h4>Lorem ipsum</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies, lectus lacinia feugiat pellentesque, nisl tortor venenatis ligula, vitae ultrices nisl ante a sem. Proin non diam venenatis ante maximus lacinia. Sed sed augue in tortor suscipit ultrices pharetra nec risus. Nunc eu elit ut massa ultrices posuere eu non orci. Donec sed leo in tellus consectetur condimentum. Aliquam id egestas sapien. Aliquam nibh neque, bibendum at rhoncus quis, pellentesque sed odio. Nunc nunc arcu, interdum in ante vitae, dictum sagittis ante. Phasellus sit amet tortor at turpis consectetur convallis vel vitae urna.
+                    </p>
+                </div>
+            </li>
+            <li class="card">
+                <img alt="Cosas"  src="https://placehold.co/200x150"/>
+                <div>
+                    <h4>Lorem ipsum</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies, lectus lacinia feugiat pellentesque, nisl tortor venenatis ligula, vitae ultrices nisl ante a sem. Proin non diam venenatis ante maximus lacinia. Sed sed augue in tortor suscipit ultrices pharetra nec risus. Nunc eu elit ut massa ultrices posuere eu non orci. Donec sed leo in tellus consectetur condimentum. Aliquam id egestas sapien. Aliquam nibh neque, bibendum at rhoncus quis, pellentesque sed odio. Nunc nunc arcu, interdum in ante vitae, dictum sagittis ante. Phasellus sit amet tortor at turpis consectetur convallis vel vitae urna.
+                    </p>
+                </div>
+            </li>
+        </ul>
+
+        <footer>
+            <div>
+                Vainas de footer
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
