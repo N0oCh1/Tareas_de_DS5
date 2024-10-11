@@ -4,11 +4,16 @@
     margin: 0;
     padding: 0;
 }
-main{
+body{
     display: flex;
     justify-content: center;
+}
+main{
+    display: flex;
     flex-direction: row;
     align-items: end;
+    max-width: 1000px;
+    width: 100%;
 }
 div{
     width: 100%;
@@ -43,6 +48,10 @@ p{
     font-weight: 400;
     border: 1px solid black;
     text-align: center;
+}
+p:hover{
+    background-color: #031FA2 ;
+    color: white;
 }
 @media (max-width: 500px){
     p{
