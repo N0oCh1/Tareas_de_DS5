@@ -5,12 +5,27 @@
     padding: 0;
 }body{
     padding-inline: 10%;
+    display: flex;
+    flex-direction: column;
 }
 /* wdwad */
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+header{
+    padding: 10px;
+}
+footer{
+    position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
 }
 li{
     font-size: larger;
