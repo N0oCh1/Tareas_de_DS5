@@ -3,22 +3,46 @@
 *{
     margin: 0;
     padding: 0;
-}
-body{
-    display: flex;
-    justify-content: center;
+}body{
+    padding-inline: 10%;
 }
 /* wdwad */
 main{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+li{
+    font-size: larger;
+
+}
+.section{
+    margin-top: 200px;
+    display: flex;
     flex-direction: row;
     align-items: end;
     max-width: 1000px;
-    width: 100%;
 }
-div{
-    width: 100%;
+.alcalinos{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
 }
+.metales{
+    display: flex;
+    flex-direction: row;
+
+}
+.otorMetales{
+    display: flex;
+    flex-direction: row;
+}
+.gases{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
 .section1{
     background-color: #F7CAAC;
 }
@@ -43,7 +67,11 @@ div{
 .section8{
     background-color: #00CCFF;
 }
+div{
+    width: 100%;
+}
 p{
+    padding-inline: 1vw ;
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -54,8 +82,57 @@ p:hover{
     background-color: #031FA2 ;
     color: white;
 }
-@media (max-width: 500px){
-    p{
-        font-size: 12px;
+@media (max-width: 600px){
+    .section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .alcalinos{
+        flex-direction: column;
+       
+    }
+    .metales{
+        flex-direction: column;
+    }
+    .otorMetales{
+        flex-direction: column;
+    }
+    .gases{
+        flex-direction: column;
+    }
+}
+@media (max-width: 800px) and (min-width: 601px){
+    p:hover{
+        background-color: #C11905;
+        color: white;
+    }
+    .section{
+        flex-direction: column;
+    }
+    .alcalinos{
+        flex-direction: row;   
+        .div1{
+            display: flex;
+            flex-direction: row;
+        }
+        .div2{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    .metales{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .gases{
+        flex-direction: row;
+        .div17{
+            display: flex;
+            flex-direction: row;
+        }
+        .div18{
+            display: flex;
+            flex-direction: row;
+        }
     }
 }
