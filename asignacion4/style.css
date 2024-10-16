@@ -98,9 +98,13 @@ p:hover{
     color: white;
 }
 @media (max-width: 600px){
+    body{
+        scroll-behavior: auto;
+    }
     .section{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 200px;
     }
     .alcalinos{
         flex-direction: column;
@@ -117,23 +121,28 @@ p:hover{
     }
 }
 @media (max-width: 800px) and (min-width: 601px){
+    body{
+        scroll-behavior: auto;
+    }
     p:hover{
         background-color: #C11905;
         color: white;
     }
     .section{
+        scroll-behavior: auto;
         flex-direction: column;
+        margin-bottom: 200px;
     }
     .alcalinos{
         flex-direction: row;   
-        .div1{
-            display: flex;
-            flex-direction: row;
-        }
-        .div2{
-            display: flex;
-            flex-direction: row;
-        }
+    }
+    .div1{
+        display: flex;
+        flex-direction: row;
+    }
+    .div2{
+        display: flex;
+        flex-direction: row;
     }
     .metales{
         display: grid;
@@ -141,13 +150,13 @@ p:hover{
     }
     .gases{
         flex-direction: row;
-        .div17{
-            display: flex;
-            flex-direction: row;
-        }
-        .div18{
-            display: flex;
-            flex-direction: row;
-        }
+    }
+    .div17{
+        display: flex;
+        flex-direction: row;
+    }
+    .div18{
+        display: flex;
+        flex-direction: row;
     }
 }
