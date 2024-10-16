@@ -102,6 +102,7 @@ p:hover{
         scroll-behavior: auto;
     }
     .section{
+        margin-top: 100px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin-bottom: 200px;
@@ -129,9 +130,16 @@ p:hover{
         color: white;
     }
     .section{
+        margin-top: 100px;
         scroll-behavior: auto;
         flex-direction: column;
         margin-bottom: 200px;
+    }
+    .section7{
+        width: auto;
+    }
+    .section8{
+        width: auto;
     }
     .alcalinos{
         flex-direction: row;   
@@ -150,13 +158,16 @@ p:hover{
     }
     .gases{
         flex-direction: row;
+        width: fit-content;
     }
     .div17{
         display: flex;
         flex-direction: row;
+        width: auto;
     }
     .div18{
         display: flex;
         flex-direction: row;
+        width:auto;
     }
 }
